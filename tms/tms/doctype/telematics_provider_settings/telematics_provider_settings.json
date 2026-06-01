@@ -1,0 +1,45 @@
+{
+ "name": "Telematics Provider Settings",
+ "custom": 0,
+ "istable": 0,
+ "issingle": 1,
+ "fields": [
+  {
+   "fieldname": "provider",
+   "fieldtype": "Select",
+   "label": "Provider",
+   "options": "Generic Webhook\nOSRM\nGoogle Maps\nSamsara\nGeotab",
+   "default": "Generic Webhook"
+  },
+  {
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "label": "API URL"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "webhook_secret",
+   "fieldtype": "Password",
+   "label": "Webhook Secret"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0
+  }
+ ]
+}

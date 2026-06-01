@@ -1,0 +1,30 @@
+{
+ "name": "TMS Settlement Deduction",
+ "custom": 0,
+ "istable": 1,
+ "fields": [
+  {
+   "fieldname": "deduction_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Fuel Advance\nToll\nMaintenance\nOther",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000"
+}

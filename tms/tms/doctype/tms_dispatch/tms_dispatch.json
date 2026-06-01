@@ -1,0 +1,61 @@
+{
+ "name": "TMS Dispatch",
+ "custom": 0,
+ "istable": 0,
+ "is_submittable": 1,
+ "autoname": "format:DSP-{YYYY}-{####}",
+ "fields": [
+  {
+   "fieldname": "route",
+   "fieldtype": "Link",
+   "label": "Route",
+   "options": "TMS Route",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nDispatched\nIn Transit\nCompleted\nCancelled",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "dispatch_time",
+   "fieldtype": "Datetime",
+   "label": "Dispatch Time"
+  },
+  {
+   "fieldname": "completion_time",
+   "fieldtype": "Datetime",
+   "label": "Completion Time"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1
+  }
+ ]
+}

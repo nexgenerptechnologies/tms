@@ -1,0 +1,48 @@
+{
+ "name": "TMS Route Stop",
+ "custom": 0,
+ "istable": 1,
+ "fields": [
+  {
+   "fieldname": "stop_sequence",
+   "fieldtype": "Int",
+   "label": "Sequence",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "stop_type",
+   "fieldtype": "Select",
+   "label": "Stop Type",
+   "options": "Pickup\nDelivery",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "time_window_start",
+   "fieldtype": "Datetime",
+   "label": "Time Window Start"
+  },
+  {
+   "fieldname": "time_window_end",
+   "fieldtype": "Datetime",
+   "label": "Time Window End"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nArrived\nCompleted\nSkipped",
+   "default": "Pending"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000"
+}

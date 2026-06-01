@@ -1,0 +1,62 @@
+{
+ "name": "Vehicle Telemetry Log",
+ "custom": 0,
+ "istable": 0,
+ "autoname": "autoincrement",
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "odometer",
+   "fieldtype": "Float",
+   "label": "Odometer (km)"
+  },
+  {
+   "fieldname": "speed",
+   "fieldtype": "Float",
+   "label": "Speed (km/h)"
+  },
+  {
+   "fieldname": "engine_status",
+   "fieldtype": "Select",
+   "label": "Engine Status",
+   "options": "On\nOff\nIdle"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0
+  }
+ ]
+}

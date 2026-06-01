@@ -1,0 +1,6 @@
+app_name = "tms"
+app_title = "TMS"
+app_publisher = "NexGen ERP Technologies"
+app_description = "Transportation Management System"
+app_email = "admin@example.com"
+app_license = "mit"

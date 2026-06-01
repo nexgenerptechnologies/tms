@@ -1,0 +1,57 @@
+{
+ "name": "TMS Driver Contract",
+ "custom": 0,
+ "istable": 0,
+ "autoname": "field:contract_name",
+ "fields": [
+  {
+   "fieldname": "contract_name",
+   "fieldtype": "Data",
+   "label": "Contract Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate_per_km",
+   "fieldtype": "Currency",
+   "label": "Rate per Km"
+  },
+  {
+   "fieldname": "rate_per_drop",
+   "fieldtype": "Currency",
+   "label": "Rate per Drop"
+  },
+  {
+   "fieldname": "fixed_base_pay",
+   "fieldtype": "Currency",
+   "label": "Fixed Base Pay"
+  },
+  {
+   "fieldname": "percentage_of_load",
+   "fieldtype": "Percent",
+   "label": "Percentage of Load Value"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "name": "Freight Audit Log",
+ "custom": 0,
+ "istable": 0,
+ "is_submittable": 1,
+ "autoname": "format:AUD-{YYYY}-{####}",
+ "fields": [
+  {
+   "fieldname": "carrier_invoice",
+   "fieldtype": "Link",
+   "label": "Carrier Invoice",
+   "options": "Carrier Invoice",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_cost_profile",
+   "fieldtype": "Link",
+   "label": "Expected Cost Profile",
+   "options": "TMS Expected Cost Profile"
+  },
+  {
+   "fieldname": "calculated_expected_cost",
+   "fieldtype": "Currency",
+   "label": "Calculated Expected Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Currency",
+   "label": "Variance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nDisputed",
+   "default": "Pending"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1
+  }
+ ]
+}

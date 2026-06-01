@@ -1,0 +1,57 @@
+{
+ "name": "TMS Route",
+ "custom": 0,
+ "istable": 0,
+ "autoname": "format:RT-{YYYY}-{####}",
+ "fields": [
+  {
+   "fieldname": "route_name",
+   "fieldtype": "Data",
+   "label": "Route Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_location",
+   "fieldtype": "Data",
+   "label": "Start Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_location",
+   "fieldtype": "Data",
+   "label": "End Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_estimated_distance",
+   "fieldtype": "Float",
+   "label": "Total Estimated Distance (km)"
+  },
+  {
+   "fieldname": "total_estimated_time",
+   "fieldtype": "Float",
+   "label": "Total Estimated Time (hrs)"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Table",
+   "label": "Stops",
+   "options": "TMS Route Stop"
+  }
+ ],
+ "doctype": "DocType",
+ "module": "TMS",
+ "engine": "InnoDB",
+ "creation": "2026-06-01 10:00:00.000000",
+ "modified": "2026-06-01 10:00:00.000000",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0
+  }
+ ]
+}
